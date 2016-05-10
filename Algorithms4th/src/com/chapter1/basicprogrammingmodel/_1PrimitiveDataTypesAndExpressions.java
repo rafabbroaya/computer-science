@@ -1,7 +1,5 @@
 package com.chapter1.basicprogrammingmodel;
 
-import javax.swing.text.StyledEditorKit.ForegroundAction;
-
 /**
  * Data type is a set o values and operations on those values.
  * 
