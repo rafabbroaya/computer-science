@@ -74,9 +74,9 @@ public class _1PrimitiveDataTypesAndExpressions {
 	public static void main(String[] args) {
 		_1PrimitiveDataTypesAndExpressions test = new _1PrimitiveDataTypesAndExpressions();
 		int array[] = { 1, 2, 1, 3, 2, 5, 10, 5, 7 };
-		//System.out.println(test.getMaximunValue(array));
+		// System.out.println(test.getMaximunValue(array));
 		int[] reverse = test.getReverseArray(array);
-		
+
 	}
 
 }
