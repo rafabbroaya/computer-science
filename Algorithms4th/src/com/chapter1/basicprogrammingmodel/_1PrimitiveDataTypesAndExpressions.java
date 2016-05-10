@@ -3,7 +3,7 @@ package com.chapter1.basicprogrammingmodel;
 /**
  * Data type is a set o values and operations on those values.
  * 
- * @author rafael sanchez
+ * @author rafael
  *
  */
 public class _1PrimitiveDataTypesAndExpressions {
