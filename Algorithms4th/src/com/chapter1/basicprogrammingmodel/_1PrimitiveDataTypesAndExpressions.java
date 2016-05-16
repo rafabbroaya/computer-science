@@ -48,35 +48,68 @@ public class _1PrimitiveDataTypesAndExpressions {
 		}
 	}
 
-	public int getMaximunValue(int array[]) {
+	public static int getMaximunValue(int array[]) {
 		// fin the maximun of array values
 		int maximun = array[0];
 		for (int i = 0; i < array.length; i++) {
 			if (array[i] > maximun)
 				maximun = array[i];
 		}
+		System.out.println("\nMAXIMUN");
+		System.out.print(maximun);
 		return maximun;
 	}
 
-	public int[] getReverseArray(int array[]) {
+	public static int[] getReverseArray(int array[]) {
 		int[] reverse = new int[array.length];
 		int countReverse = array.length;
 		for (int i = 0; i < array.length; i++) {
 			countReverse--;
 			reverse[countReverse] = array[i];
 		}
+		System.out.println("\nREVERSE");
 		for (int i = 0; i < reverse.length; i++) {
-			System.out.println(reverse[i]);
+			System.out.print(reverse[i] + " ");
 		}
 		return reverse;
 	}
 
-	public static void main(String[] args) {
-		_1PrimitiveDataTypesAndExpressions test = new _1PrimitiveDataTypesAndExpressions();
-		int array[] = { 1, 2, 1, 3, 2, 5, 10, 5, 7 };
-		// System.out.println(test.getMaximunValue(array));
-		int[] reverse = test.getReverseArray(array);
+	public static int[] getSort(int array[]) {
+		for (int i = 0; i < array.length - 1; i++) {
+			if (array[i] > array[i + 1]) {
+				int temp = array[i];
+				array[i] = array[i + 1];
+				array[i + 1] = temp;
+			}
+		}
+		System.out.println("\nSORT");
+		for (int i = 0; i < array.length; i++) {
+			System.out.print(array[i] + " ");
+		}
+		return array;
+	}
 
+	public static boolean primalityTest(int n) {
+		boolean flag = true;
+		if (n > 1) {
+			for (int i = 2; i < n; i++) {
+				if (n % 2 == 0)
+					flag = false;
+			}
+		} else {
+			flag = false;
+		}
+		System.out.println("\nPRIMALITY TEST");
+		System.out.print(n + " is prime: " + flag);
+		return flag;
+	}
+	
+	public static void main(String[] args) {
+		int array[] = { 1, 2, 1, 3, 2, 5, 10, 5, 7 };
+		getMaximunValue(array);
+		getReverseArray(array);
+		getSort(array);
+		primalityTest(5);
 	}
 
 }
