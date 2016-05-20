@@ -7,9 +7,10 @@ public class _2Recursion {
 			return; // base case
 		System.out.print(number + " ");
 		decrease(--number); // smaller in some sense
+		//not overlap
 	}
 
 	public static void main(String[] args) {
-		decrease(8);
+		//decrease(8);
 	}
 }
